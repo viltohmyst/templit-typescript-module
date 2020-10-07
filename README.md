@@ -1,3 +1,9 @@
+# Use this template
+
+```
+npx degit --force viltohmyst/templit-typescript-module#main
+```
+
 # How this template is created
 
 ```
