@@ -1,8 +1,61 @@
 # Use this template
 
-```
+## Copy to your directory
+
+- Clone files and initialize git
+
+```bash
+mkdir new-project
+cd new-project
 npx degit --force viltohmyst/templit-typescript-module#main
+git init
 ```
+
+- Edit git config (if necessary)
+
+```bash
+git config user.email "<name>@<domain>.com"
+git config user.name "<name>"
+```
+
+## Change Project File Names
+
+```json
+# package.json
+{
+  "name": "<new-project>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<github-name>/<new-project>.git"
+  },
+  "bugs": {
+    "url": "https://github.com/<github-name>/<new-project>/issues"
+  },
+  "homepage": "https://github.com/<github-name>/<new-project>#readme",
+}
+```
+
+## Push First Commit
+
+- Initialize with git repo
+
+```bash
+git remote add origin https://github.com/<github-name>/<new-project>.git
+git add .
+git commit -m "first commit"
+git branch -M main
+git push -u origin main
+```
+
+## Initialize the modules
+
+- Call npm install from the project root directory
+
+```bash
+npm install
+```
+
+- Start Coding!
 
 # How this template is created
 
