@@ -10,7 +10,7 @@
   },
   "scripts": {
     "lint": "eslint 'src/**/*?(.spec).{js,ts,tsx}' --quiet --fix",
-    "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "build": "tsc -p tsconfig.prod.json && tsc -p tsconfig.prodcjs.json",
     "start": "node -r ts-node/register src/index.ts",
     "start:break": "node --inspect-brk -r ts-node/register src/index.ts",
     "start:debug": "node --inspect -r ts-node/register src/index.ts",
